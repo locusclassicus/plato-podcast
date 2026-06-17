@@ -1,0 +1,118 @@
+/* ================================
+   CUSTOM CLASSES
+   ================================ */
+
+/* Background colors */
+.bg-charcoal {
+  background-color: #0d0d0d;
+}
+
+.bg-mustard {
+  background-color: #D4A017;
+}
+
+.bg-cream {
+  background-color: #F5E6CC;
+}
+
+/* Text colors */
+.text-mustard {
+  color: #D4A017;
+}
+
+.text-charcoal {
+  color: #1a1a1a;
+}
+
+.text-off-white {
+  color: #FFF8E7;
+}
+
+/* Typography */
+.font-display {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+}
+
+.font-ui {
+  font-family: 'Jost', sans-serif;
+}
+
+/* Section spacing */
+.section-padding {
+  padding: 100px 0;
+}
+
+/* Hero section */
+.hero-section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: #0d0d0d;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Stats */
+.stat-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #D4A017;
+  line-height: 1;
+}
+
+/* Geometric shapes */
+.diamond {
+  width: 60px;
+  height: 60px;
+  background: #D4A017;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+/* Borders */
+.border-top-mustard {
+  border-top: 5px solid #D4A017;
+}
+
+.border-bottom-mustard {
+  border-bottom: 5px solid #D4A017;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  .stat-number {
+    font-size: 3rem;
+  }
+  
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+.social-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  display: inline-block;
+  vertical-align: middle;
+}
