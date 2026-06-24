@@ -459,3 +459,96 @@ a:hover {
   color: var(--accent);
   border-bottom-color: var(--accent);
 }
+
+/* ------------------------------------------------ */
+/* СТРАНИЦА ОТДЕЛЬНОГО ЭПИЗОДА (ПЛЕЕР, РАСШИФРОВКА) */
+/* ------------------------------------------------ */
+
+/* Контейнер статьи */
+.episode-container {
+  max-width: 800px;
+  margin: 4rem auto 6rem;
+  padding: 0 2rem;
+}
+
+/* Назад в архив */
+.episode-back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.episode-back:hover {
+  transform: translateX(-4px);
+}
+
+/* Номер и мета-данные выпуска */
+.episode-meta {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Главный заголовок эпизода */
+.episode-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* Блок с плеером */
+.episode-media-box {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Адаптивность для плееров (Mave/YouTube) */
+.episode-media-box iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Идеально для YouTube, для Mave можно убрать */
+  border-radius: 8px;
+  border: none;
+}
+
+/* Подзаголовки в тексте (например, "Расшифровка") */
+.episode-content h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+/* Текст расшифровки */
+.episode-content p {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+/* Выделение имен спикеров */
+.speaker {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .episode-container {
+    margin-top: 2rem;
+  }
+}
+
