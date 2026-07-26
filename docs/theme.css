@@ -206,6 +206,44 @@ body {
 }
 
 /* ------------------------------------------------ */
+/* Бонусные выпуски */
+/* ------------------------------------------------ */
+
+.archive-item.archive-item-with-bonus {
+  border-bottom: none;
+  padding-bottom: 1rem;
+}
+
+.archive-bonus-item {
+  display: block;
+
+  margin-top: -1.2rem;
+  padding: 0 0 1.5rem 112px;
+
+  color: #6f6f6f;
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4;
+
+  border-bottom: 1px solid var(--border);
+
+  transition: 
+    color 0.2s ease,
+    transform 0.25s ease;
+}
+
+
+/* Навели на бонус */
+
+.archive-bonus-item:hover {
+  color: var(--accent);
+  transform: translateX(8px);
+}
+
+
+/* ------------------------------------------------ */
 /* Listen блок */
 /* ------------------------------------------------ */
 
@@ -427,6 +465,14 @@ a:hover {
 
   .archive-title {
     font-size: 1.1rem;
+  }
+  
+  .archive-bonus-item {
+    margin-top: -0.5rem;
+    padding-left: 66px;
+    padding-bottom: 1.25rem;
+
+    font-size: 0.9rem;
   }
 }
 
